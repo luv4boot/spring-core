@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<context:annotation-config />
+	<bean name="reservation123"
+		class="com.luv4boot.springcoreadvanced.autowired.annotations.assignment.Reservation"
+		p:id="1001" p:time="11:35 AM" />
+
+	<bean name="reservation12" class="com.luv4boot.springcoreadvanced.autowired.annotations.assignment.Reservation" 
+		p:id="1001" p:time="11:35 AM" />
+
+	<bean name="customer"
+		class="com.luv4boot.springcoreadvanced.autowired.annotations.assignment.Customer"
+		p:name="Madhav" />
+
+</beans>
